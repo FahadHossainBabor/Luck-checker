@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="shortcut icon" href="./fav.jpg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="container mx-auto">
+    <h1 class="text-center text-4xl font-bold mt-10 text-violet-400">Let's Check Your luck</h1>
+    <div class="flex justify-center items-center mt-10">
+      <div class= " h-72 w-72  rounded lg:h-96 w-96 bg-[#7091F5]">
+        <h1 class="text-white text-2xl text-center font-bold mt-10">
+          Guess a number between 1 to 10
+        </h1>
+
+        <input
+          type="number"
+          class=" ml-2  md:ml-10 lg:ml-10 mt-5 px-3 py-3 lg:px-5 rounded"
+          id="input"
+          placeholder="Enter a number"
+        />
+        <button
+          class="bg-violet-600 px-3 lg:px-5 py-3 text-white font-bold rounded"
+          type="submit"
+          id="submit-btn"
+        >
+          Submit
+        </button>
+        <div
+          id="showing-result"
+          class="mt-10 text-white font-bold text-2xl text-center"
+        ></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
